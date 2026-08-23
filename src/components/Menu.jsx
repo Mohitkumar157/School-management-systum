@@ -142,7 +142,7 @@ function Menu() {
                 height={20}
                 className="object-cover"
               />
-              <span className='md:block hidden'>{item.label}</span>
+              <span className='hidden! md:block!'>{item.label}</span>
             </Link>
           ))}
 

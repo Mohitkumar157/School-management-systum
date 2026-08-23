@@ -3,7 +3,7 @@ import React from 'react'
 
 function UserCard({ type }) {
     return (
-        <div className='rounded-xl odd:bg-lamaPurple even:bg-lamaYellow min-w-55 p-4'>
+        <div className='rounded-xl odd:bg-lamaPurple even:bg-lamaYellow w-full p-4'>
             <div className='flex justify-between items-center'>
                 <span className="text-[10px] bg-white px-2 py-1 rounded-full text-green-600">
                     2025/05

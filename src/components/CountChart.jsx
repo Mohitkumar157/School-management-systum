@@ -33,7 +33,7 @@ const style = {
 function CountChart() {
     return (
 
-        <div className='flex flex-col gap-4 bg-white p-4 rounded-xl'>
+        <div className='flex flex-col justify-between gap-4 bg-white p-4 rounded-xl h-full'>
             {/* TITLE */}
             <div className='flex items-center justify-between'>
                 <h1 className='text-lg font-semibold'>Students</h1>

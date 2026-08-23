@@ -17,3 +17,24 @@
 span{
   display: inline-block;
 }
+.react-calendar {
+    background: #fff;
+    border: none !important;
+    width: 100% !important;
+    border-radius: 12px !important;
+    max-width: 100%;
+    padding: 4px !important;
+    font-family: 'inter', sans-serif;
+    line-height: 1.125em;
+}
+abbr:where([title]){
+  text-decoration: none !important;
+}
+.react-calendar__navigation__label__labelText{
+  font-weight: 600 !important;
+}
+.react-calendar__tile--active{
+  background-color: #c3ebfa !important;
+  color: black !important;
+  border-radius: 4px !important;
+}
