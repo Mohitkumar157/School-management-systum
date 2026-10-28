@@ -13,7 +13,7 @@ function DeskboardLayout({ children }) {
           href={"/"}
           className='flex items-center justify-center gap-2 p-4'
         >
-          <Image src={"/Borcelle School Crest 2025–2026.png"} alt='logo' width={32} height={32} loading='eager' />
+          <Image src={"/school-logo.png"} alt='logo' width={32} height={32} loading='eager' />
           <span className='hidden lg:block'>School</span>
         </Link>
         <Menu />
