@@ -14,7 +14,7 @@ function DeskboardLayout({ children }) {
           className='flex items-center justify-center gap-2 p-4'
         >
           <Image src={"/school-logo.png"} alt='logo' width={40} height={40} loading='eager' className= "rounded-full overflow-hidden" />
-          <span className='hidden lg:block'>School</span>
+          <span className='hidden lg:block'>Borcelle School</span>
         </Link>
         <Menu />
       </div>
