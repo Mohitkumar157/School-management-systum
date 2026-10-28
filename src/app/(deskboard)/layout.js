@@ -13,8 +13,8 @@ function DeskboardLayout({ children }) {
           href={"/"}
           className='flex items-center justify-center gap-2 p-4'
         >
-          <Image src={"/logo.png"} alt='logo' width={32} height={32} loading='eager' />
-          <span className='hidden lg:block'>School lamba</span>
+          <Image src={"/school-logo.png"} alt='logo' width={32} height={32} loading='eager' />
+          <span className='hidden lg:block'>School</span>
         </Link>
         <Menu />
       </div>
