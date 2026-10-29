@@ -50,7 +50,7 @@ function AttendanceChart() {
   return (
     <div className="relative bg-white rounded-lg p-4 h-full flex flex-col gap-4">
       <div className="flex justify-between items-center">
-        <h1 className="text-lg font-semibold">Attendance</h1>
+        <h1 className="text-lg font-semibold text-lamaText">Attendance</h1>
         <Image src="/moreDark.png" alt="" width={20} height={20} />
       </div>
       {!isChartReady && <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10'>
@@ -69,10 +69,10 @@ function AttendanceChart() {
           <XAxis
             dataKey="name"
             axisLine={false}
-            tick={{ fill: "#d1d5db" }}
+            tick={{ fill: "#444444" }}
             tickLine={false}
           />
-          <YAxis axisLine={false} tick={{ fill: "#d1d5db" }} tickLine={false} />
+          <YAxis axisLine={false} tick={{ fill: "#444444" }} tickLine={false} />
           <Tooltip
             contentStyle={{ borderRadius: "10px", borderColor: "lightgray" }}
           />
@@ -83,13 +83,13 @@ function AttendanceChart() {
           />
           <Bar
             dataKey="present"
-            fill="#FAE27C"
+            fill="#1367c8"
             legendType="circle"
             radius={[10, 10, 0, 0]}
           />
           <Bar
             dataKey="absent"
-            fill="#C3EBFA"
+            fill="#673bb7"
             legendType="circle"
             radius={[10, 10, 0, 0]}
           />

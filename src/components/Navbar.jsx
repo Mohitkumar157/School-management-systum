@@ -2,11 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 function Navbar() {
     return (
-         <div className='flex items-center justify-between p-4!'>
+         <div className='flex items-center justify-between p-4! bg-white'>
       {/* SEARCH BAR */}
-      <div className='hidden md:flex items-center gap-2 text-xs rounded-full ring-[1.5px] ring-gray-300 px-2!'>
+      <div className='hidden max-w-80 w-full md:flex items-center gap-2 text-xs rounded-full bg-[#f5f5f5] ring-[1.5px] ring-[#f5f5f5] px-2!'>
         <Image src="/search.png" alt="" width={14} height={14}/>
-        <input type="text" placeholder="Search..." className="w-50 p-2 bg-transparent outline-none"/>
+        <input type="text" placeholder="Search..." className="w-50 p-2 bg-transparent outline-none text-[12px] font-medium text-[#444444]"/>
       </div>
       {/* ICONS AND USER */}
       <div className='flex items-center gap-6 justify-center md:justify-end w-full'>

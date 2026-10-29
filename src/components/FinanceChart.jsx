@@ -82,7 +82,7 @@ const FinanceChart = () => {
     return (
         <div className="relative bg-white rounded-xl w-full h-full p-4">
             <div className="flex justify-between items-center">
-                <h1 className="text-lg font-semibold">Finance</h1>
+                <h1 className="text-lg font-semibold text-lamaText">Finance</h1>
                 <Image src="/moreDark.png" alt="" width={20} height={20} />
             </div>
             {!isChartReady && <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10'>
@@ -106,15 +106,15 @@ const FinanceChart = () => {
                         bottom: 5,
                     }}
                 >
-                    <CartesianGrid strokeDasharray="3 3" stroke="#ddd" />
+                    <CartesianGrid strokeDasharray="3 3" stroke="#44444" />
                     <XAxis
                         dataKey="name"
                         axisLine={false}
-                        tick={{ fill: "#d1d5db" }}
+                        tick={{ fill: "#444444" }}
                         tickLine={false}
                         tickMargin={10}
                     />
-                    <YAxis axisLine={false} tick={{ fill: "#d1d5db" }} tickLine={false} tickMargin={20} />
+                    <YAxis axisLine={false} tick={{ fill: "#444444" }} tickLine={false} tickMargin={20} />
                     <Tooltip />
                     <Legend
                         align="center"
@@ -124,10 +124,15 @@ const FinanceChart = () => {
                     <Line
                         type="monotone"
                         dataKey="income"
-                        stroke="#C3EBFA"
+                        stroke="#1367c8"
                         strokeWidth={5}
                     />
-                    <Line type="monotone" dataKey="expense" stroke="#CFCEFF" strokeWidth={5} />
+                    <Line
+                        type="monotone"
+                        dataKey="expense"
+                        stroke="#673bb7"
+                        strokeWidth={5}
+                    />
                 </LineChart>
             </ResponsiveContainer>
         </div>

@@ -7,12 +7,15 @@
   }
 }
 @theme {
-  --color-lamaSky: #C3EBFA;
+  --color-lamaRed: #ff1616;
   --color-lamaSkyLight: #EDF9FD;
-  --color-lamaPurple: #CFCEFF;
-  --color-lamaPurpleLight: #F1F0FF;
-  --color-lamaYellow: #FAE27C;
+  --color-lamaPurple: #673bb7;
+  --color-lamaPurpleLight: #6a73fa;
+  --color-lamaYellow: #ffaa16;
   --color-lamaYellowLight: #FEFCE8;
+  --color-lamaWhite : #f1f1f1;
+  --color-lamaText : #312a2a;
+  --color-lamaBlue : #1367c8;
 }
 span{
   display: inline-block;
@@ -37,4 +40,29 @@ abbr:where([title]){
   background-color: #c3ebfa !important;
   color: black !important;
   border-radius: 4px !important;
+}
+
+.rbc-toolbar-label{
+ text-align: right !important;
+ padding-inline: 16px !important;
+}
+.rbc-toolbar > :first-child{
+ display: none !important;
+}
+.rbc-toolbar > :last-child{
+  font-size: 13px !important;
+}
+.rbc-toolbar > :last-child button{
+  border: 0 !important;
+  border-radius: 4px !important;
+  overflow: hidden !important;
+}
+.rbc-btn-group{
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+.rbc-active{
+  background-color: #dbdafe !important;
+  box-shadow: none !important;
 }

@@ -27,7 +27,7 @@ const events = [
 ];
 function EventCalander() {
     const [value, setValue] = useState(new Date());
-    console.log(Calendar);
+    console.log("Mohit");
 
     return (
         <div >
@@ -40,7 +40,7 @@ function EventCalander() {
 
             <div className='bg-white p-4 rounded-xl'>
                 <div className="flex justify-between items-center mb-4">
-                    <h1 className="text-lg font-semibold">Events</h1>
+                    <h1 className="text-lg font-semibold text-lamaText">Events</h1>
                     <Image src="/moreDark.png" alt="" width={20} height={20} />
                 </div>
 
@@ -48,7 +48,7 @@ function EventCalander() {
                 <div className="flex flex-col gap-4">
                     {events.map((event) => (
                         <div
-                            className="p-5 rounded-md border border-gray-100 border-t-4 odd:border-t-lamaSky even:border-t-lamaPurple"
+                            className="p-5 rounded-md border border-gray-100 border-t-4 even:border-t-lamaBlue odd:border-t-lamaPurple"
                             key={event.id}
                         >
                             <div className="flex items-center justify-between">

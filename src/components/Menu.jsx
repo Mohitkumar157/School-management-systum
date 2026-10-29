@@ -1,10 +1,12 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react'
-
+let role  = "admin";
 const menuItems = [
   {
-    title: "MENU",
+    title: "MAIN MENU",
     items: [
       {
         icon: "/home.png",
@@ -122,29 +124,37 @@ const menuItems = [
 
 
 function Menu() {
+  const pathName = usePathname();
+  console.log("PathNAme", pathName);
+  
   return (
     <div className='flex flex-col justify-between gap-2 mt-4 text-sm px-2!'>
       {menuItems.map((menuItem) => (
         <React.Fragment key={menuItem.title}>
 
-          <span className='hidden lg:block text-gray-400 font-light my-4!'>{menuItem.title}</span>
+          <span className='hidden lg:block text-lamaText font-medium text-center md:text-start md:pl-4 my-4!'>{menuItem.title}</span>
 
-          {menuItem.items.map((item) => (
-            <Link
-              href={item.href}
-              key={item.label}
-              className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 md:px-2 rounded-md hover:bg-lamaSkyLight"
-            >
-              <Image
-                src={item.icon}
-                alt={item.label}
-                width={20}
-                height={20}
-                className="object-cover"
-              />
-              <span className='hidden! md:block!'>{item.label}</span>
-            </Link>
-          ))}
+          {menuItem.items.map((item) => {
+            if (item.visible.includes(role)) {
+              return (
+                <Link
+                  
+                  href={item.href}
+                  key={item.label}
+                  className={`flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 md:px-2 rounded-md hover:bg-lamaSkyLight ${pathName === item.href ? "bg-lamaSkyLight" : ""}`}
+                >
+                  <Image
+                    src={item.icon}
+                    alt={item.label}
+                    width={20}
+                    height={20}
+                    className="object-cover"
+                  />
+                  <span className='hidden! md:block!'>{item.label}</span>
+                </Link>
+              )
+            }
+          })}
 
         </React.Fragment>
       ))}

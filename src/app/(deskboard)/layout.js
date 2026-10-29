@@ -20,7 +20,7 @@ function DeskboardLayout({ children }) {
       </div>
 
 
-      <div className='w-[86%] md:w-[86%] lg:w-[84%] xl:w-[86%] bg-[#f7f8fa] overflow-y-scroll'>
+      <div className='w-[86%] md:w-[86%] lg:w-[84%] xl:w-[86%] bg-[#f3f3f3] overflow-y-scroll'>
         <Navbar />
         {children}
       </div>
